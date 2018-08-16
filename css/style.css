@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.link-wrapper {
+  text-align: center;
+}
+
 .circle {
   position: absolute;
   top: 0;
