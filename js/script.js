@@ -23,3 +23,8 @@ document.onmousedown = (e) => {
     document.onmousemove = null;
   }
 }
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.beginPath();
+}
