@@ -1,29 +1,21 @@
 body {
   padding: 0;
   margin: 0;
-}
-
-.link-wrapper {
   text-align: center;
 }
 
-.circle {
+.border {
+  border: solid 2px black;
+  width: 700px;
+  height: 400px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 60px;
-  background-color: lightskyblue;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 40px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -380px;
+  padding: 20px 20px;
+  padding-right: 22px;
 }
 
-.circle:hover {
-  cursor: -webkit-grab;
-}
-
-.circle:active {
-  cursor: -webkit-grabbing;
-  opacity: 0.5;
+.canvas {
+  border: solid 2px black;
 }
