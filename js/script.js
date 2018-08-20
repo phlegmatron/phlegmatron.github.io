@@ -72,7 +72,8 @@ window.onkeyup = (event) => {
   keyState[event.keyCode] = false;
 }
 
-drawFrame();
+var propmt = prompt('Начать игру?')
+if (prompt) drawFrame();
 
 
 
