@@ -47,6 +47,7 @@ function drawFrame() {
   if ((dropdownElement.y + dropdownElement.height) > canvas.height) {
     var gameOver = confirm('Игра окончена, еще раз?')
     if (gameOver) document.location.reload();
+    return;
   }
   if (mainElement.crashWith(dropdownElement)) {
     dropdownElement.y = -dropdownElement.height;
