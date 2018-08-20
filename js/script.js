@@ -45,9 +45,8 @@ function drawFrame() {
   if (dropdownElement.y === -dropdownElement.height) dropdownElement.x = getRandomNumber(0, canvas.width - dropdownElement.width);
   dropdownElement.y += dropdownElement.speed
   if ((dropdownElement.y + dropdownElement.height) > canvas.height) {
-    alert('bam')
-    document.location.reload();
-    return;
+    var gameOver = confirm('Игра окончена, еще раз?')
+    if (gameOver) document.location.reload();
   }
   if (mainElement.crashWith(dropdownElement)) {
     dropdownElement.y = -dropdownElement.height;
@@ -72,8 +71,5 @@ window.onkeyup = (event) => {
   keyState[event.keyCode] = false;
 }
 
-var propmt = prompt('Начать игру?')
-if (prompt) drawFrame();
-
-
-
+var startGame = confirm('Начать игру?')
+if (startGame) drawFrame();
